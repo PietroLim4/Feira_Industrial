@@ -27,10 +27,11 @@ This project was developed as part of my learning process in web development, wi
 - Simple and clean UI
 
 ## 📂 Project Structure
+```
 ├── index.html
 ├── style.css
 └── img/
-
+```
 
 ## 🚀 Live Demo
 
