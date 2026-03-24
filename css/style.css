@@ -1,0 +1,424 @@
+:root {
+  --raw-seinna: hsl(24, 74%, 58%);
+  --bg-primary: #0f0f0f;
+  --bg-secondary: #1b1b1b;
+  --color-primary: hsl(0, 0%, 100%);
+  --text-light: #f5f5f5;
+  --text-muted: #bdbdbd;
+  --accent-color: #ff7b00;
+  --transition-1: 0.25s ease-in-out;
+  --raw-seinaa: hsl(34, 50%, 54%);
+  /*--raw-seinaa: #1c4a57;*/
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-light);
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  margin: 0 auto;  
+  max-width: 1500px;
+}
+
+.fundo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.2;
+  object-fit: cover;
+  background-size: cover;      
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+main{
+  padding: 0 10px;
+  padding-top: 80px;
+
+}
+
+h2, h3 {
+  text-indent: 4%;
+  color: var(--raw-seinaa);
+  margin: 30px 0px 10px;
+}
+
+p {
+  text-indent: 2%;
+  margin-bottom: 5px;
+  text-align: justify;
+  padding-left: 10px;
+  padding-right: 15px;
+  margin: 10px 0px 10px;
+  line-height: 25px;
+}
+
+ul {
+  margin-left: 70px;
+  list-style: circle;
+  line-height: 50px;
+}
+
+.contorno {
+  float: right;
+  margin: 10px 30px;
+  width: 140px;
+}
+
+
+.contorno2 {
+  float: right;
+  margin: 30px 50px;
+  width: 150px;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--bg-secondary);
+  transition: var(--transition-1);
+  z-index: 4;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 20px;
+}
+
+.logo{
+  margin: 5px 0px 10px;
+}
+
+.logo a {
+  color: var(--color-primary);
+  font-family: "Saira Stencil One", sans-serif;
+  font-size: 24px;
+}
+
+.logo span {
+  color: var(--raw-seinna);
+}
+
+.lis {
+  display: flex;
+  gap: 20px;
+  color: var(--color-primary);
+  font-weight: 500;
+  transition: var(--transition-1);
+  list-style: none;
+}
+
+.lis:hover {
+  color: var(--raw-seinna);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:target {
+  scroll-margin-top: 90px; 
+}
+
+.casos{
+  list-style: none;
+  margin-left: 70px;
+}
+
+h1 {
+  color: var(--raw-seinna);
+  margin: 20px 0px 10px;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 5px;
+  background: var(--raw-seinna);
+  margin-top: 8px;
+  border-radius: 2px;
+}
+
+.sla {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  margin: 80px auto;
+  max-width: 1100px;
+  background: var(--bg-secondary);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.sla-container {
+  flex: 1;
+  padding: 50px 60px;
+}
+
+.sla-container h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-light);
+  margin-bottom: 20px;
+}
+
+.sla-container p {
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+
+.sla-img {
+  flex: 1;
+  opacity: 0.9;
+  background-image: url("img/Cybersecurity-Terms-image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0 6px 6px 0;
+  min-height: 400px;
+  box-shadow: 0 0 30px rgba(255, 123, 0, 0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.sla-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 40px rgba(255, 123, 0, 0.5);
+}
+
+
+.security-section {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+  gap: 50px;
+}
+
+.security-text {
+  flex: 1;
+}
+
+.security-text h1 {
+  font-size: 2.8rem;
+  color: var(--accent-color);
+  border-left: 5px solid var(--accent-color);
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+.security-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 500px;
+  color: #dcdcdc;
+}
+.sla-section {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  margin: 80px auto;
+  max-width: 1100px;
+  background: var(--bg-secondary);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.sla-image {
+  flex: 1;
+}
+
+.sla-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.sla-content {
+  flex: 1;
+  padding: 40px 50px;
+}
+
+.sla-content h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-light);
+  margin-bottom: 20px;
+}
+
+.sla-content p {
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    background-color: #1b1b1b;
+    border-radius: 12px;
+    padding: 30px 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(71, 65, 65, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+  }
+
+  .card:hover {
+    transform: translateY(-30px);
+  }
+
+  .card img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 15px;
+  }
+
+  .card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #aa6728;
+  }
+
+  .card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+
+  .card a {
+    text-decoration: none;
+    color: #f18b2d;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .card a:hover {
+    text-decoration: underline;
+  }
+
+
+footer {
+  background-color: var(--bg-secondary);
+  height: 27px;
+  align-content: center;
+}
+
+footer p {
+  margin: 0;
+  text-align: end;
+}
+
+.easter{
+  text-decoration: none;
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .lis {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 50px;
+    right: 5px;
+    width: 130px;
+    background: var(--bg-secondary);
+    border-radius: 10px;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    display: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  li{
+    line-height: 30px;
+    padding-top: 10px;
+  }
+
+  ul{
+    margin-left: 40px;
+  }
+  .casos{
+    margin-left: 30px;
+  }
+
+  ul.lis{
+    margin-left: 15px;
+    line-height: 30px;
+  }
+
+  .contorno {
+    max-width: 50px;
+  }
+  
+  .contorno2 {
+    max-width: 50px;
+  }
+  
+  body {
+    font-size: 14px;
+  }
+
+  section {
+    padding: 15px;
+  }
+}
