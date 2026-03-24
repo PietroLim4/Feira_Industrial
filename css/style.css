@@ -45,11 +45,8 @@ body {
 }
 main{
   padding: 0 10px;
-<<<<<<< HEAD
   padding-top: 80px;
 
-=======
->>>>>>> 2ad8c605c51b0488603162dead79eb25641477b7
 }
 
 h2, h3 {
@@ -338,7 +335,6 @@ footer p {
 .easter{
   text-decoration: none;
   color: white;
-<<<<<<< HEAD
 }
 
 img {
@@ -426,6 +422,3 @@ img {
     padding: 15px;
   }
 }
-=======
-}
->>>>>>> 2ad8c605c51b0488603162dead79eb25641477b7
